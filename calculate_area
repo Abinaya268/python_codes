@@ -1,0 +1,15 @@
+import math
+class solution:
+    def calculate_area(self):
+        choice=int(input("choice="))
+        if choice ==1 :
+            R=int(input("R="))
+            return math.pi*R*R
+        elif choice ==2 :
+            L=int(input("L="))
+            B=int(input("B="))
+            return L*B
+        else:
+            print("invalid choice")
+sol=solution()
+print("area=",sol.calculate_area())
